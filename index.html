@@ -77,7 +77,7 @@
             fill: currentColor;
         }
 
-        /* Rodapé com o Carrossel idêntico ao do SharePoint */
+        /* Rodapé com o Carrossel */
         .carousel-nav {
             display: flex;
             align-items: center;
@@ -136,7 +136,7 @@
             Processos, políticas, comunicados e templates centralizados em um só lugar.
         </p>
 
-        <!-- Botão Entrar com o Link Real do SharePoint -->
+        <!-- Botão Entrar com o Link Real do SharePoint de Produção -->
         <a id="portalLink" href="https://hitmail.sharepoint.com/sites/hitdocs/" target="_blank" class="btn-entrar">
             <svg viewBox="0 0 24 24">
                 <path d="M9 11.24V7.5C9 6.12 10.12 5 11.5 5S14 6.12 14 7.5v3.74c1.21-.81 2-2.18 2-3.74C16 5.01 13.99 3 11.5 3S7 5.01 7 7.5c0 1.56.79 2.93 2 3.74zm9.84 4.63l-4.54-2.26c-.24-.13-.51-.19-.79-.19H13V7.5c0-.83-.67-1.5-1.5-1.5S10 6.67 10 7.5v10.74l-3.44-.72c-.09-.02-.17-.03-.26-.03-.36 0-.69.15-.92.39l-.82.84 5.3 5.31c.29.29.67.44 1.07.44h7.61c.74 0 1.37-.52 1.5-1.25l.93-5.27c.09-.52-.11-1.05-.53-1.35z"/>
@@ -144,7 +144,7 @@
             <span id="btn-text">Entrar</span>
         </a>
 
-        <!-- Controles de Carrossel (Setas e Pílulas) -->
+        <!-- Controles de Carrossel -->
         <div class="carousel-nav">
             <button class="carousel-arrow" onclick="prevSlide()" title="Anterior">&#10094;</button>
             <div class="carousel-dots">
@@ -226,10 +226,6 @@
 
         window.onload = function() {
             startAutoSlide();
-
-            // Redirecionamento automático do SharePoint em nova aba
-            var url = document.getElementById('portalLink').href;
-            window.open(url, '_blank');
         };
     </script>
 </body>
